@@ -1,0 +1,294 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+   overflow-x: hidden;
+
+}
+
+
+/* navigation */
+nav{
+    /* border:2px solid black; */
+    width:100vw;
+    display:flex;
+    gap:80px;
+    position:fixed;
+    z-index:4;
+    background-color:white;
+   
+
+}
+nav #logo{
+    height:40px;
+    width:100px;
+    /* border:2px solid black; */
+    margin-left:25px;
+    padding:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    
+}
+
+nav ul{
+  display:flex;
+  justify-content:center;
+  /* border:2px solid black; */
+  width:50%;
+ 
+  
+}
+
+nav ul li{
+    list-style:none;
+    text-decoration:none;
+    margin:10px;
+    position:relative;
+    cursor: pointer;
+    /* border:2px solid black; */
+}
+ 
+
+
+nav ul .nav-items::after{
+  content:"";
+  height:5px;
+  width:100%;
+  background-color:aqua;
+  position:absolute;
+  left:0px;
+  bottom:-12px;
+  opacity:0;
+  transition:0.5s;
+}
+
+nav ul .nav-items:hover::after{
+    opacity:1;
+} 
+
+nav .font{
+  font-size:77%;
+  font-weight:530;
+  color:grey;
+}
+
+
+
+nav #search{
+    /* border:2px solid black; */
+    height:50px;
+    width:430px;
+}
+nav #search input{
+    height:40px;
+    width:70%;
+}
+nav #search i{
+    height:100px;
+    margin-left:20px;
+}
+
+
+/* main section */
+main{
+    /* position:relative; */
+    /* border:2px solid black; */
+  
+    
+}
+main .Hero-section{
+    display:flex;
+    z-index:0;
+   
+}
+main .Hero-section #car-image-1{
+    position:absolute;
+    z-index:1;
+}
+
+/* hero heading of 1 image*/
+main .Hero-Heading1 {
+    position:absolute;
+    top:250px;
+    left:350px;
+    z-index:3;
+    color:white;
+    border:2px solid black;
+    border-radius:20px;
+    padding:15px;
+}
+main .Hero-Heading1 #input-field{
+    width:70%;
+}
+main .Hero-Heading1 #btn{
+    width:20%;
+    font-size:16px;
+    border-radius:5px;
+    background-color:orange;
+}
+main .Hero-section #car-image-2{
+    position:absolute;
+    z-index:2;
+    left:100%;
+}
+
+
+
+main .Hero-section #car-image-3{
+    position:absolute;
+    z-index:3;
+    left:100%;
+}
+
+
+main .Hero-section #car-image-4{
+    position:absolute;
+    z-index:3;
+    left:100%;
+}
+
+
+
+main .Hero-section #car-image-5{
+    position:absolute;
+    z-index:3;
+    left:100%;
+}
+
+
+
+
+main .size{
+    height:100vh;
+    width:100vw;
+}
+
+/* featured car section */
+section{
+    /* border:2px solid black; */
+    margin:0px 50px 0px 50px;
+    overflow:hidden;
+    position:relative;
+
+}
+section #feature-Section{
+    margin:550px 0px 0px 50px;
+    color:rgb(98, 97, 97);
+   
+    font-size:35px;
+}
+
+section  #feature-Section ul{
+    font-size:small;
+    display:flex;
+    flex-direction:row;
+}
+
+section ul li{
+    list-style:none;
+    margin:5px;
+    position:relative;
+    cursor:pointer;
+}
+.color-change{
+    color:aqua;
+
+}
+.color-change::after{
+    content:"";
+    position:absolute;
+    height:5px;
+    width:100%;
+    background-color:aqua;
+    top:17px;
+    left:2px;
+}
+/* cards-section */
+
+
+section #cards-section{
+    display:flex;
+    position:relative;
+    /* border:2px solid black; */
+    width:2000px;
+}
+section #button-wrapper{
+    position:sticky;
+    z-index:5;
+    bottom:20%;
+    left:0%;
+    /* border:2px solid black; */
+    width: 977px;
+    display:flex;
+    justify-content:space-between;
+    
+   
+}
+    
+    
+ #right-icon1{
+    position:absolute;
+    z-index:5;
+    right:20px;
+    top:80%;
+    /* border:1px solid black; */
+    border-radius:10px;
+    background-color: white;
+    cursor:pointer;
+}
+
+section #cards-section .box{
+    border:1px solid grey;
+    margin:10px;
+    height:300px;
+    width:300px;
+    position:relative;
+}
+
+.box .car-details{
+    background-color:rgba(217, 217, 217, 0.71);
+    height:30%;
+    width:100%;
+    position:relative;
+    top:70%;
+}
+ 
+
+
+
+@media (min-width:600px) and (max-width:800px){
+     nav{
+        width:100vw;
+
+     }
+    nav #search{
+      display:none;
+    }
+
+    main .Hero-Heading1{
+    position:absolute;
+    top:250px;
+    left:150px;
+    }
+
+    main .Hero-Heading2{
+    position:absolute;
+    top:250px;
+    left:800px;
+    }
+
+   
+    
+}
+  
+
+   
+
+
+
+
+ 
+    
